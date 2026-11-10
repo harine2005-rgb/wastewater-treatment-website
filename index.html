@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaPure | Water & Sewage Treatment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Aqua<span>Pure</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Our Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">CLEAN WATER, HEALTHY FUTURE</p>
+            <h1>Transforming Wastewater Into a <span>Better Tomorrow</span></h1>
+            <p>
+                Sustainable water and sewage treatment solutions
+                for industries, businesses, and communities.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn primary-btn">
+                    Explore Services
+                </a>
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=900&q=80"
+                alt="Water flowing through a natural environment">
+        </div>
+        <div class="about-content">
+            <p class="section-label">ABOUT OUR COMPANY</p>
+            <h2>Building a Cleaner and Greener World</h2>
+            <p>
+                We focus on reliable water and wastewater treatment
+                solutions that help protect natural resources and
+                support a sustainable environment.
+            </p>
+            <p>
+                Our approach combines efficient treatment methods,
+                responsible water management, and environmentally
+                conscious practices.
+            </p>
+            <a href="#contact" class="btn primary-btn">
+                Talk to Our Team
+            </a>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="section-heading">
+            <p class="section-label">WHAT WE DO</p>
+            <h2>Our Treatment Solutions</h2>
+            <p>Reliable solutions for cleaner water and a healthier planet.</p>
+        </div>
+        <div class="service-container">
+            <article class="service-card">
+                <div class="service-icon">💧</div>
+                <h3>Water Treatment</h3>
+                <p>
+                    Treatment solutions that help remove impurities
+                    and improve water quality for appropriate uses.
+                </p>
+            </article>
+            <article class="service-card">
+                <div class="service-icon">♻️</div>
+                <h3>Sewage Treatment</h3>
+                <p>
+                    Wastewater treatment solutions designed to
+                    reduce pollutants before discharge or reuse.
+                </p>
+            </article>
+            <article class="service-card">
+                <div class="service-icon">🏭</div>
+                <h3>Industrial Treatment</h3>
+                <p>
+                    Wastewater management solutions tailored to
+                    industrial processes and operational needs.
+                </p>
+            </article>
+            <article class="service-card">
+                <div class="service-icon">🌱</div>
+                <h3>Water Recycling</h3>
+                <p>
+                    Water reuse strategies that help conserve
+                    resources and reduce wastewater generation.
+                </p>
+            </article>
+        </div>
+    </section>
+    <!-- Treatment Process -->
+    <section class="process section" id="process">
+        <div class="section-heading">
+            <p class="section-label">HOW IT WORKS</p>
+            <h2>Our Treatment Process</h2>
+            <p>Four key stages in a typical wastewater treatment system.</p>
+        </div>
+        <div class="process-container">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h3>Collection</h3>
+                <p>Wastewater is collected and directed to the treatment facility.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h3>Screening</h3>
+                <p>Large solids and debris are removed from the incoming water.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h3>Treatment</h3>
+                <p>Physical, biological, and other suitable treatment stages reduce pollutants.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h3>Reuse or Discharge</h3>
+                <p>Treated water is reused or discharged in accordance with applicable standards.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="contact-content">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2>Let's Create a Sustainable Future Together</h2>
+            <p>
+                Have a water treatment project in mind?
+                Send us a message to discuss your requirements.
+            </p>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <label for="name">Your Name</label>
+            <input
+                type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email Address</label>
+            <input
+                type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="service">Service Required</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Water Treatment">Water Treatment</option>
+                <option value="Sewage Treatment">Sewage Treatment</option>
+                <option value="Industrial Treatment">Industrial Treatment</option>
+                <option value="Water Recycling">Water Recycling</option>
+            </select>
+            <label for="message">Your Message</label>
+            <textarea
+                id="message" name="message" rows="4" placeholder="Tell us about your requirements" required></textarea>
+            <button type="submit" class="btn primary-btn">
+                Send Message
+            </button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">Aqua<span>Pure</span></a>
+        <p>Working towards cleaner water and a greener future.</p>
+        <p class="copyright">
+            &copy; <span id="year"></span> AquaPure Water Solutions.
+            All rights reserved.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
